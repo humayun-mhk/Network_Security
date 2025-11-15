@@ -1,0 +1,6 @@
+[ 2025-11-15 10:50:18,160 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-11-15 10:50:18,180 ] 107 dagshub - INFO - Accessing as humayun-mhk
+[ 2025-11-15 10:50:20,103 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/humayun-mhk/Network_Security "HTTP/1.1 200 OK"
+[ 2025-11-15 10:50:22,155 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-11-15 10:50:22,164 ] 107 dagshub - INFO - Initialized MLflow to track repo "humayun-mhk/Network_Security"
+[ 2025-11-15 10:50:22,168 ] 107 dagshub - INFO - Repository humayun-mhk/Network_Security initialized!

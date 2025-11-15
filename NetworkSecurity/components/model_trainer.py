@@ -1,6 +1,6 @@
 import os
 import sys
-
+import joblib
 from networksecurity.exception.exception import NetworkSecurityException 
 from networksecurity.logging.logger import logging
 
@@ -27,7 +27,14 @@ import mlflow
 from urllib.parse import urlparse
 
 import dagshub
-#dagshub.init(repo_owner='krishnaik06', repo_name='networksecurity', mlflow=True)
+dagshub.init(repo_owner='humayun-mhk', repo_name='Network_Security', mlflow=True)
+import dagshub
+
+
+#os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/krishnaik06/networksecurity.mlflow"
+#os.environ["MLFLOW_TRACKING_USERNAME"]="humayun-mhk"
+#os.environ["MLFLOW_TRACKING_PASSWORD"]="7104284f1bb44ece21e0e2adb4e36a250ae3251f"
+
 
 
 
@@ -42,7 +49,7 @@ class ModelTrainer:
             raise NetworkSecurityException(e,sys)
     
     def track_mlflow(self,best_model,classificationmetric):
-       # mlflow.set_registry_uri("https://dagshub.com/krishnaik06/networksecurity.mlflow")
+        mlflow.set_registry_uri("https://dagshub.com/humayun-mhk/Network_Security.mlflow")
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         with mlflow.start_run():
             f1_score=classificationmetric.f1_score
@@ -52,7 +59,11 @@ class ModelTrainer:
             mlflow.log_metric("f1_score",f1_score)
             mlflow.log_metric("precision",precision_score)
             mlflow.log_metric("recall_score",recall_score)
-            mlflow.sklearn.log_model(best_model,"model")
+             # Save model locally
+            joblib.dump(best_model, "best_model.pkl")
+
+            # Log model artifact manually
+            mlflow.log_artifact("best_model.pkl")
 
 
         
@@ -165,4 +176,3 @@ class ModelTrainer:
             
         except Exception as e:
             raise NetworkSecurityException(e,sys)
-            
