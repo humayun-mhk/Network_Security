@@ -1,0 +1,10 @@
+artifact_location: file:///F:/MLOPS/KRISH/Network%20Security/mlruns/0/models/m-f6f66f5f80724f7b8f400d28bb99d700/artifacts
+creation_timestamp: 1763177701712
+experiment_id: '0'
+last_updated_timestamp: 1763177722906
+model_id: m-f6f66f5f80724f7b8f400d28bb99d700
+model_type: null
+name: model
+source_run_id: a197b95186db4cdb991564af8ea515b7
+status: 2
+status_message: null

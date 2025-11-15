@@ -1,0 +1,22 @@
+artifact_path: file:///F:/MLOPS/KRISH/Network%20Security/mlruns/0/models/m-f6f66f5f80724f7b8f400d28bb99d700/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.5.1
+model_id: m-f6f66f5f80724f7b8f400d28bb99d700
+model_size_bytes: 26759328
+model_uuid: m-f6f66f5f80724f7b8f400d28bb99d700
+prompts: null
+run_id: a197b95186db4cdb991564af8ea515b7
+utc_time_created: '2025-11-15 03:35:01.808489'
