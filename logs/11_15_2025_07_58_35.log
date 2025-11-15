@@ -1,0 +1,22 @@
+[ 2025-11-15 07:58:45,775 ] 21 root - INFO - Initiate the data ingestion
+[ 2025-11-15 07:59:04,351 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2025-11-15 07:59:04,351 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-11-15 07:59:04,352 ] 75 root - INFO - Exporting train and test file path.
+[ 2025-11-15 07:59:04,425 ] 84 root - INFO - Exported train and test file path.
+[ 2025-11-15 07:59:04,426 ] 23 root - INFO - Data Initiation Completed
+[ 2025-11-15 07:59:04,443 ] 27 root - INFO - Initiate the data Validation
+[ 2025-11-15 07:59:04,516 ] 32 root - INFO - Required number of columns:2
+[ 2025-11-15 07:59:04,516 ] 33 root - INFO - Data frame has columns:31
+[ 2025-11-15 07:59:04,523 ] 32 root - INFO - Required number of columns:2
+[ 2025-11-15 07:59:04,523 ] 33 root - INFO - Data frame has columns:31
+[ 2025-11-15 07:59:04,747 ] 29 root - INFO - data Validation Completed
+[ 2025-11-15 07:59:04,748 ] 32 root - INFO - data Transformation started
+[ 2025-11-15 07:59:04,748 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-11-15 07:59:04,748 ] 65 root - INFO - Starting data transformation
+[ 2025-11-15 07:59:04,789 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-11-15 07:59:04,790 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-11-15 07:59:04,811 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-11-15 07:59:04,815 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-11-15 07:59:04,816 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-11-15 07:59:04,819 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-11-15 07:59:04,821 ] 36 root - INFO - data Transformation completed
